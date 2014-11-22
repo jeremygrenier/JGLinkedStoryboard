@@ -5,6 +5,13 @@ JGLinkedStoryboard
 
 `UIStoryboards` are very powerful and useful. However, to make the best use of storyboards, they need to be broken down into natural modules. The problem with having many storyboards is writing the code to transition between them. `JGLinkedStoryboard` solves this problem by allowing segues between `UIStoryboards`. These segues can be built without leaving Interface Builder and without writing any extra code.
 
+## Installation
+
+CocoaPods is a library dependency management tool for Objective-C. To use JGLinkedStoryboard with CocoaPods, simply add the following to your Podfile and run pod install:
+
+	pod 'JGLinkedStoryboard'
+	
+
 ## How to use
 
 1. Your app's storyboards must first be decomposed into their natural modules. See this [guide][1] for some tips.
