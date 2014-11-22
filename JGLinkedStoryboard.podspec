@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "5.0"
 
 
-  s.source       = { :git => "https://github.com/jeremygrenier/JGLinkedStoryboard", :tag => "1.0" }
+  s.source       = { :git => "https://github.com/jeremygrenier/JGLinkedStoryboard.git", :tag => "1.0" }
 
 
   s.source_files  = "JGLinkedStoryboard", "JGLinkedStoryboard/*.{h,m}"
