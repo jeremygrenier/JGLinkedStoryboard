@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C68k" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELS-DA-WPC">
+                                <rect key="frame" x="196" y="251" width="208" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="3T5-NS-f3V"/>
+                                    <constraint firstAttribute="height" constant="98" id="FHN-Ii-KYl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycj-E1-ZRs">
+                                <rect key="frame" x="237" y="392" width="127" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="RQv-WZ-dcS"/>
+                                    <constraint firstAttribute="height" constant="30" id="dlq-Rh-h9X"/>
+                                </constraints>
+                                <state key="normal" title="Settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BfU-8k-K4Z" kind="presentation" identifier="@Settings" id="Sw5-QQ-kzs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqd-eh-IkX">
+                                <rect key="frame" x="237" y="430" width="127" height="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LSc-m0-DHU" kind="presentation" identifier="LoginNavController@settingsStoryboard" id="jtU-ul-p0e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wqd-eh-IkX" firstAttribute="width" secondItem="ycj-E1-ZRs" secondAttribute="width" id="6Vp-Ae-iI9"/>
+                            <constraint firstAttribute="centerY" secondItem="ELS-DA-WPC" secondAttribute="centerY" id="C5o-Fo-uF4"/>
+                            <constraint firstItem="Wqd-eh-IkX" firstAttribute="height" secondItem="ycj-E1-ZRs" secondAttribute="height" id="a2l-To-VRE"/>
+                            <constraint firstItem="ycj-E1-ZRs" firstAttribute="top" secondItem="ELS-DA-WPC" secondAttribute="bottom" constant="43" id="hNG-Qa-fFM"/>
+                            <constraint firstAttribute="centerX" secondItem="ELS-DA-WPC" secondAttribute="centerX" id="hte-r5-TiD"/>
+                            <constraint firstItem="Wqd-eh-IkX" firstAttribute="centerX" secondItem="ycj-E1-ZRs" secondAttribute="centerX" id="qpV-nI-5Q9"/>
+                            <constraint firstItem="ELS-DA-WPC" firstAttribute="centerX" secondItem="ycj-E1-ZRs" secondAttribute="centerX" id="xj0-pT-3sh"/>
+                            <constraint firstItem="Wqd-eh-IkX" firstAttribute="top" secondItem="ycj-E1-ZRs" secondAttribute="bottom" constant="8" id="zOp-Dh-5gK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="z9S-VC-13L">
+            <objects>
+                <viewController id="BfU-8k-K4Z" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UhI-uk-hnH"/>
+                        <viewControllerLayoutGuide type="bottom" id="t0i-c6-yBy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ypu-cl-rHw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LhB-mF-a0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="398" y="1195"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="u2L-wa-qvM">
+            <objects>
+                <viewController id="LSc-m0-DHU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2kq-Iu-iIm"/>
+                        <viewControllerLayoutGuide type="bottom" id="PXL-gV-Uso"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Vo-ov-aTj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mz7-Lg-TEZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1226" y="378"/>
+        </scene>
+    </scenes>
+</document>
