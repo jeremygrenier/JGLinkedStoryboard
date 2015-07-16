@@ -45,8 +45,9 @@
 + (UIViewController *)sceneNamed:(NSString *)identifier
 {
     NSArray *info = [identifier componentsSeparatedByString:@"@"];
+    NSArray *storyboardInfo = [info[1] componentsSeparatedByString:@":"];
     
-    NSString *storyboard_name = info[1];
+    NSString *storyboard_name = storyboardInfo[0];
     NSString *scene_name = info[0];
     
     NSAssert(storyboard_name.length , @"LinkedStoryboard: storyboard name blank");
