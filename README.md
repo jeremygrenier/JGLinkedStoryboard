@@ -10,7 +10,7 @@ JGLinkedStoryboard
 CocoaPods is a library dependency management tool for Objective-C. To use JGLinkedStoryboard with CocoaPods, simply add the following to your Podfile and run pod install:
 
 	pod 'JGLinkedStoryboard'
-	
+
 
 ## How to use
 
@@ -19,6 +19,8 @@ CocoaPods is a library dependency management tool for Objective-C. To use JGLink
 2. Where ever you want create a transition into a different storyboard, create a `UIViewController` representing the scene to be pushed.
 
 3. Create the desired segue type (Push, Modal, Custom) to these surrogate view controllers. To take advantage of the new linking, set the identifier of the segue with the syntax `controller@storyboard`. Where `controller` is the `Storyboard ID` of the destination view controller and `storyboard` the name of the storyboard or the name of the method in our `UIStoryboard` category. If you omit the controller name, it will link to the initial view controller.
+
+In order to further identify the segue an identifier can be added at the end the syntax to help differentiate them. For example `controller@storyboard:animated` and `controller@storyboard` would linked from the same controller but it is clear that one is going to be animated while the other would not. 
 
 4. Enjoy !
 
